@@ -1,1 +1,0 @@
-const yesNo = (flag) => flag ? 'Yes' : 'No';
