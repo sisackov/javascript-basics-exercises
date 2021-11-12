@@ -2,7 +2,7 @@
  * @param {string} str non-empty string of words
  * @returns {number} length of the shortest word(s)
  */
-function shortesWordLength(str) {
+function shortestWordLength(str) {
     let min = str.length;//initialising to big number
     let words = str.split(' ');
     for (const word of words) {
@@ -12,6 +12,6 @@ function shortesWordLength(str) {
     return min;
 }
 
-console.log(shortesWordLength('Your task is to write a function maskify'));//1
-console.log(shortesWordLength('String will never be empty'));//2
-console.log(shortesWordLength('account for different data types'));//3
+console.log(shortestWordLength('Your task is to write a function maskify'));//1
+console.log(shortestWordLength('String will never be empty'));//2
+console.log(shortestWordLength('account for different data types'));//3

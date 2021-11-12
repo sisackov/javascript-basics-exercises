@@ -15,7 +15,7 @@ function toCamelCase(str) {
         if (char.match(regexp)) {
             if ((i + 1) !== strLen) {//if this is the last character - just ommit it
                 i++;
-                camel += str.charAt(i).toLocaleUpperCase();
+                camel += str.charAt(i).toUpperCase();
             }
         } else {
             camel += char;
@@ -31,3 +31,11 @@ console.log(toCamelCase("abc"));// abc
 console.log(toCamelCase("The_Stealth_Warrio_r"));//"TheStealthWarrioR"
 console.log(toCamelCase("The_Stealth_Warrior_"));//"TheStealthWarrior"
 
+
+/*
+TODO - make this work
+function toCamelCase(str) {
+    return str.split(/^[-_]+$/)
+        .map(s => (s.charAt(0).toUpperCase() + s.slice(1)))
+        .join('')
+} */
