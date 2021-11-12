@@ -6,17 +6,13 @@
  * @param {string}
  */
 function toCamelCase(str) {
-    // const regexp = /^[-_]+$/;//the + allowsto match strings with length>1
-    const dash = '-';
-    const underscore = '_';
-
+    const regexp = /^[-_]+$/;//the + allows to match strings with length>1
     let camel = '';
     const strLen = str.length;
-    // let orig = str.slice();
 
     for (let i = 0; i < strLen; i++) {
         let char = str.charAt(i);
-        if (char === dash || char === underscore) {
+        if (char.match(regexp)) {
             if ((i + 1) !== strLen) {//if this is the last character - just ommit it
                 i++;
                 camel += str.charAt(i).toLocaleUpperCase();
@@ -29,6 +25,9 @@ function toCamelCase(str) {
 }
 
 
-console.log(toCamelCase("the-stealth-warrior"));// returns "theStealthWarrior"
-console.log(toCamelCase("The_Stealth_Warrior"));// returns "TheStealthWarrior"
+console.log(toCamelCase("the-stealth-warrior"));//"theStealthWarrior"
+console.log(toCamelCase("The_Stealth_Warrior"));//"TheStealthWarrior"
+console.log(toCamelCase("abc"));// abc
+console.log(toCamelCase("The_Stealth_Warrio_r"));//"TheStealthWarrioR"
+console.log(toCamelCase("The_Stealth_Warrior_"));//"TheStealthWarrior"
 
