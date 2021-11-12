@@ -1,6 +1,4 @@
-
 /**
- * 
  * @param {string} str string consists of only alphabetical characters and spaces(' ').
  * @returns {string} str with all even indexed characters in each word upper cased, 
  * and all odd indexed characters in each word lower cased
