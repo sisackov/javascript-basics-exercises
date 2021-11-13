@@ -1,6 +1,6 @@
 /**
  * @param {number} square perfect square
- * @returns -1 if square isn't perfect. Otherwise the next integral perfect square after the parameter
+ * @returns {number} -1 if square isn't perfect. Otherwise the next integral perfect square after the parameter
  */
 function findNextSquare(square) {
     let next = -1;

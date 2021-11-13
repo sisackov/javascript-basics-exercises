@@ -4,7 +4,7 @@
  * @param {positive or null number} percent increase every year
  * @param {integer} aug inhabitants coming or leaving each year
  * @param {positive integer} p population to surpass
- * @return n number of entire years needed to get a population greater or equal to p
+ * @return {number} n number of entire years needed to get a population greater or equal to p
  */
 function nb_year(p0, percent, aug, p) {
     if (p0 >= p) {

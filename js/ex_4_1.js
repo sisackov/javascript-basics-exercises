@@ -2,7 +2,7 @@
 /**
  * Reccursive method to return the nth fibonacci number
  * @param {number} n the number of the element in the sequence 
- * @returns the element
+ * @returns {number} the element
  */
 function fibonacci(n) {
     if (n > 1) {

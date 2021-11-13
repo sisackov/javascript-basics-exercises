@@ -5,7 +5,7 @@
 function shortestWordLength(str) {
     let min = str.length;//initialising to big number
     let words = str.split(' ');
-    for (const word of words) {
+    for (const word of str) {
         let len = word.length;
         min = len < min && len || min;
     }

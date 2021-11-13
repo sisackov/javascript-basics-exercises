@@ -1,7 +1,7 @@
 /**
  * @param {array} arr - array of minimum 4 positive integers
  * 
- * @returns the sum of the 2 lowest numbers in the array
+ * @returns {number} the sum of the 2 lowest numbers in the array
  */
 function sumOfLowest(arr) {
     let lowest = arr.slice(0, 2);//array that holds the 2 current lowest numbers

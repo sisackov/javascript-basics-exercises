@@ -3,7 +3,7 @@
  * function: decimal = a[n](2**0) + a[n-1]*(2**(1)) + ... + a[0]*(2**n)
  * where n is the array length
  * @param {array} arr an array of ones and zeroes
- * @returns the equivalent binary value to an integer
+ * @returns {number} the equivalent binary value to an integer
  */
 function binaryToDecimal(arr) {
     let decimal = 0;

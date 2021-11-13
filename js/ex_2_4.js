@@ -1,6 +1,6 @@
 /**
  * @param {array} arr array that contains at least 3 numbers
- * @returns the unique number in the array
+ * @returns {number} the unique number in the array
  */
 function findUniq(arr) {
     let num1 = arr[0];

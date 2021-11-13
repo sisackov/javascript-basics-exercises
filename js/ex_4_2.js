@@ -1,10 +1,9 @@
 /**
  * 
- * @param {array} signature will always contain 3 numbers
+ * @param {Array.<number>} signature will always contain 3 numbers
  * @param {number} n index of last element
- * @returns the first n elements of the tribonacci sequence - signature 
+ * @returns {Array.<number>} the first n elements of the tribonacci sequence - signature
  * included of the so seeded sequence.
- * TODO - make this reccursive
  */
 function tribonaci(signature, n) {
     if (n < 4) {

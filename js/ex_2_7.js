@@ -2,7 +2,7 @@
  * @param {string} operation 
  * @param {number} value1
  * @param {number} value2
- * @returns result of the operation on the values
+ * @returns {number} result of the operation on the values
  */
 function basicOp(operation, value1, value2) {
     let result;
