@@ -15,3 +15,14 @@ function fibonacci(n) {
 console.log(fibonacci(8));//21
 console.log(fibonacci(3));//2
 console.log(fibonacci(4));//3
+
+function fiboTail(n) {
+    return fiboTailRec(n, 0, 1);
+}
+
+function fiboTailRec(n, a, b) {
+    if (n <= 1) {
+        return n;
+    }
+    return fiboTailRec(n, b, a + b);
+}
